@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint1">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:elevation="5dp"
+        android:layout_margin="@dimen/tendp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/indian_flag"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INDIA"
+                    android:textSize="@dimen/thirtydp"
+
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/tendp"
+                android:weightSum="2"
+                android:divider="@color/cardview_dark_background"
+                android:showDividers="middle">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/totalIndia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00000"
+                        android:textSize="@dimen/thirtydp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/totalIndiaInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+0000"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/twentydp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tendp"
+                        android:text="Recovered">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/recoveredIndia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00000"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/thirtydp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/recoveredIndiaInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+0000"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/twentydp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+                <!--<View
+                    android:id="@+id/divider3"
+                    android:layout_width="3dp"
+                    android:layout_height="160dp"
+
+                    android:background="?android:attr/listDivider"
+                    tools:layout_editor_absoluteX="19dp"
+                    tools:layout_editor_absoluteY="1dp" />-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/currentIndia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00000"
+                        android:textSize="@dimen/thirtydp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/currentIndiaInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+0000"
+                        android:textColor="@color/colorGreen"
+                        android:textSize="@dimen/twentydp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tendp"
+                        android:text="Deaths">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/deathsIndia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0000"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/thirtydp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/deathsIndiaInc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+000"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/twentydp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+    <!--<View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/card_top"
+        app:layout_constraintBottom_toTopOf="@id/statefield"/>-->
+
+    <TextView
+        android:id="@+id/statefield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="States and Union Teritories"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/card_top"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:focusable="true">
+    </TextView>
+    <EditText
+
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Search"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statefield"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginRight="@dimen/tendp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:padding="3dp"
+        android:background="@drawable/search_bar_style"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recyclerView"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:elevation="@dimen/tendp"
+        app:backgroundTint="@color/blue"
+        app:borderWidth="@dimen/tendp"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:pressedTranslationZ="@dimen/thirtydp"
+        app:rippleColor="@color/colorGreen2"
+        app:srcCompat="@drawable/ic_baseline_refresh_24"
+        app:tint="#FFFFFF">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

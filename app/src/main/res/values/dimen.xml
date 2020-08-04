@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="thirtydp">30sp</dimen>
+    <dimen name="twentydp">20sp</dimen>
+    <dimen name="fivedp">5dp</dimen>
+</resources>
