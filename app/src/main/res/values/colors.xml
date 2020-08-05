@@ -10,4 +10,5 @@
     <color name="darkGreen">#4CAF50</color>
     <color name="colorDarkOnSurface">#CC000000</color>
     <color name="colorDarkSurface">#121212</color>
+    <color name="colorWhite">#FFFFFF</color>
 </resources>

@@ -1,6 +1,9 @@
 package com.example.card;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -11,6 +14,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,6 +28,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONArray;
@@ -39,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_MaterialComponents_Light_NoActionBar);
         setContentView(R.layout.activity_main);
+
+
 
         FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.floating1);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -108,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         snackbar.show();
 
     }
+
 
     //to format the values in terms of thousands(K) ; Millions(M) or Billions(B)
     String getFormattedNumber(long n) {

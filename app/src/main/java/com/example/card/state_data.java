@@ -45,6 +45,7 @@ public class state_data extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_MaterialComponents_Light_NoActionBar);
         setContentView(R.layout.activity_state_data);
 
 
